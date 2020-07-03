@@ -44,7 +44,7 @@ job("kube3_groovy")
 {
   steps{
     shell('''
-status=$(curl -o /dev/null -s -w "%{http_code}" http://192.168.99.100:30002)
+status=$(curl -o /dev/null -s -w "%{http_code}" http://192.168.99.100:30001)
 if [[ $status == 200 ]]
 then
     echo "Running"
